@@ -1,0 +1,7 @@
+.home_user_name {
+  @apply mt-2;
+  .dom {
+    @apply text-skin-base hover:text-skin-hover bg-skin-base text-center font-bold py-1 px-4 rounded-full hover:bg-skin-hover;
+    transition: 0.3s;
+  }
+}

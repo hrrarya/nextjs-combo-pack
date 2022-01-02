@@ -1,0 +1,37 @@
+/*
+*
+* writing scss 
+* importing scss file with @use
+* 
+*/
+@use "home.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user_name {
+  @apply text-blue-500;
+}
+body {
+  background: #000;
+}
+@layer base {
+  :root {
+    --color-text-base: #fff;
+    --color-text-hover-base: red;
+    --color-bg-base: red;
+    --color-bg-hover-base: #ddd;
+  }
+  .theme-swiss {
+    --color-text-base: #ff3040;
+    --color-text-hover-base: #000;
+    --color-bg-base: #fff;
+    --color-bg-hover-base: #fef2f2;
+  }
+  .theme-neon {
+    --color-text-base: #ffffff;
+    --color-text-hover-base: #000000;
+    --color-bg-base: #243403;
+    --color-bg-hover-base: #374f05;
+  }
+}
